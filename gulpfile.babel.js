@@ -8,13 +8,6 @@ import util from 'gulp-util';
 import watch from 'gulp-watch';
 import webserver from 'gulp-webserver';
 
-// Lints SCSS.
-gulp.task('lint-scss', function() {
-  return gulp.src([ SOURCE.CSS, '!./dev/scss/generic/*.scss' ])
-      .pipe(csscomb())
-      .pipe(gulp.dest('./dev'));
-});
-
 // Compiles CSS.
 gulp.task('compileCss', [ 'clean' ], () => {
   return gulp.src('./dev/app.scss')
