@@ -14,6 +14,7 @@ body {
   font-family: "Muli", "Helvetica", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  background: #eee;
 }
 
 main {
@@ -32,13 +33,16 @@ main {
 }
 
 .content {
+  background: #f9f9f9;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  box-shadow: 0 50px 50px #ccc;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  background: rgba(255, 255, 255, .9);
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .avatar {
