@@ -1,0 +1,14 @@
+
+runtime: python27
+api_version: 1
+threadsafe: true
+skip_files:
+- ^(?!dist)  # Skip any files not in the dist folder
+
+handlers:
+- url: /(.*\.(gif|png|jpeg|jpg|css|js|ico|svg|svgz|webp|json))$
+  static_files: dist/\1
+  upload: dist/(.*)
+- url: /(.*)
+  static_files: dist/index.html
+  upload: dist/index.html

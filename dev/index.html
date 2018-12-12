@@ -10,10 +10,13 @@
 <body>
   <main class="wrapper">
     <div class="content">
-      <img class="avatar"
-           src="assets/img/tim-material-avatar.png"
+      <picture class="avatar">
+        <source srcset="assets/img/tim-material-avatar.webp 1x, assets/img/tim-material-avatar-2x.webp 2x" type="image/webp">
+        <source srcset="assets/img/tim-material-avatar.png 1x, assets/img/tim-material-avatar-2x.png 2x" type="image/png">
+        <img src="assets/img/tim-material-avatar.png"
            srcset="assets/img/tim-material-avatar.png 1x, assets/img/tim-material-avatar-2x.png 2x"
            alt="Tim Malabuyo Material Design avatar">
+      </picture>
       <h1>Tim Malabuyo</h1>
       <h2>Front-End Web Developer</h2>
       <h3>Currently: Google</h3>
